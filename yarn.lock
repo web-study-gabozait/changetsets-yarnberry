@@ -431,6 +431,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ldh3907/test-module2@workspace:packages/test-module2":
+  version: 0.0.0-use.local
+  resolution: "@ldh3907/test-module2@workspace:packages/test-module2"
+  dependencies:
+    esbuild: ^0.17.18
+  languageName: unknown
+  linkType: soft
+
+"@ldh3907/test-module@workspace:packages/test-module":
+  version: 0.0.0-use.local
+  resolution: "@ldh3907/test-module@workspace:packages/test-module"
+  dependencies:
+    esbuild: ^0.17.18
+  languageName: unknown
+  linkType: soft
+
 "@manypkg/find-root@npm:^1.1.0":
   version: 1.1.0
   resolution: "@manypkg/find-root@npm:1.1.0"
@@ -1654,22 +1670,6 @@ __metadata:
   checksum: 1dc476e32741acf0b1b5b0627ffd0d722e342c1b0da14de3e8ae97821327ca08f9fb944542fb3c126d90ac5f27f9d804edbe7c585bf7d12ef495d115e0f22c12
   languageName: node
   linkType: hard
-
-"ldh3907-test-module2@workspace:packages/test-module2":
-  version: 0.0.0-use.local
-  resolution: "ldh3907-test-module2@workspace:packages/test-module2"
-  dependencies:
-    esbuild: ^0.17.18
-  languageName: unknown
-  linkType: soft
-
-"ldh3907-test-module@workspace:packages/test-module":
-  version: 0.0.0-use.local
-  resolution: "ldh3907-test-module@workspace:packages/test-module"
-  dependencies:
-    esbuild: ^0.17.18
-  languageName: unknown
-  linkType: soft
 
 "lines-and-columns@npm:^1.1.6":
   version: 1.2.4

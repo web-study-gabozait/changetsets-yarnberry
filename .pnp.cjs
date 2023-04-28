@@ -16,20 +16,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."\
       },\
       {\
-        "name": "ldh3907-test-module",\
+        "name": "@ldh3907/test-module",\
         "reference": "workspace:packages/test-module"\
       },\
       {\
-        "name": "ldh3907-test-module2",\
+        "name": "@ldh3907/test-module2",\
         "reference": "workspace:packages/test-module2"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["changetsets-yarnberry", ["workspace:."]],\
-      ["ldh3907-test-module", ["workspace:packages/test-module"]],\
-      ["ldh3907-test-module2", ["workspace:packages/test-module2"]]\
+      ["@ldh3907/test-module", ["workspace:packages/test-module"]],\
+      ["@ldh3907/test-module2", ["workspace:packages/test-module2"]],\
+      ["changetsets-yarnberry", ["workspace:."]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -532,6 +532,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@esbuild/win32-x64", "npm:0.17.18"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@ldh3907/test-module", [\
+        ["workspace:packages/test-module", {\
+          "packageLocation": "./packages/test-module/",\
+          "packageDependencies": [\
+            ["@ldh3907/test-module", "workspace:packages/test-module"],\
+            ["esbuild", "npm:0.17.18"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@ldh3907/test-module2", [\
+        ["workspace:packages/test-module2", {\
+          "packageLocation": "./packages/test-module2/",\
+          "packageDependencies": [\
+            ["@ldh3907/test-module2", "workspace:packages/test-module2"],\
+            ["esbuild", "npm:0.17.18"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["@manypkg/find-root", [\
@@ -1866,26 +1886,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["kleur", "npm:4.1.5"]\
           ],\
           "linkType": "HARD"\
-        }]\
-      ]],\
-      ["ldh3907-test-module", [\
-        ["workspace:packages/test-module", {\
-          "packageLocation": "./packages/test-module/",\
-          "packageDependencies": [\
-            ["ldh3907-test-module", "workspace:packages/test-module"],\
-            ["esbuild", "npm:0.17.18"]\
-          ],\
-          "linkType": "SOFT"\
-        }]\
-      ]],\
-      ["ldh3907-test-module2", [\
-        ["workspace:packages/test-module2", {\
-          "packageLocation": "./packages/test-module2/",\
-          "packageDependencies": [\
-            ["ldh3907-test-module2", "workspace:packages/test-module2"],\
-            ["esbuild", "npm:0.17.18"]\
-          ],\
-          "linkType": "SOFT"\
         }]\
       ]],\
       ["lines-and-columns", [\
