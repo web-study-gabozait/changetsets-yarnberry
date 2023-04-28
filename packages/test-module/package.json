@@ -1,0 +1,16 @@
+{
+  "name": "test-module",
+  "packageManager": "yarn@3.5.0",
+  "main": "./dist/index.js",
+  "version": "0.0.1",
+  "dependencies": {
+    "esbuild": "^0.17.18"
+  },
+  "author": "ldh3907 <ldh165163@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "build": "npm run build:clean && npm run build:dist",
+    "build:clean": "rm -rf ./dist",
+    "build:dist": "node esbuild.config.js"
+  }
+}

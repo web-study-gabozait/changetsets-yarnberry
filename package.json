@@ -1,0 +1,21 @@
+{
+  "name": "changetsets-yarnberry",
+  "version": "1.0.0",
+  "repository": "https://github.com/web-study-gabozait/changetsets-yarnberry.git",
+  "author": "임동현 <79711744+ldh3907@users.noreply.github.com>",
+  "license": "MIT",
+  "packageManager": "yarn@3.5.0",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "build:all": "yarn workspaces foreach -p run build",
+    "release": "yarn build:all && yarn changeset publish",
+    "versioning": "yarn changeset version"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1"
+  }
+}
