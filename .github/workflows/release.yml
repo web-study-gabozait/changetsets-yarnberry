@@ -31,7 +31,7 @@ jobs:
         with:
           # this expects you to have a script called release which does a build for your packages and calls changeset publish
           publish: yarn release
-          version: yarn version-packages
+          version: yarn versioning
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
