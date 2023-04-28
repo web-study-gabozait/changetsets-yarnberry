@@ -1,7 +1,7 @@
 {
   "name": "ldh3907-test-module2",
   "packageManager": "yarn@3.5.0",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "./dist/index.js",
   "author": "ldh3907 <ldh165163@gmail.com>",
   "license": "ISC",
