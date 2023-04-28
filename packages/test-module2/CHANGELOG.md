@@ -1,5 +1,11 @@
 # test-module2
 
+## 0.0.4
+
+### Patch Changes
+
+- 6f0fb48: changeset 테스트
+
 ## 0.0.3
 
 ### Patch Changes
