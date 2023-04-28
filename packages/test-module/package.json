@@ -2,7 +2,7 @@
   "name": "ldh3907-test-module",
   "packageManager": "yarn@3.5.0",
   "main": "./dist/index.js",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "dependencies": {
     "esbuild": "^0.17.18"
   },
