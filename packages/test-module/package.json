@@ -12,5 +12,9 @@
     "build": "npm run build:clean && npm run build:dist",
     "build:clean": "rm -rf ./dist",
     "build:dist": "node esbuild.config.js"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "./dist/index.js"
   }
 }
