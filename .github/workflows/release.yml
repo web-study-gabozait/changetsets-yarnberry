@@ -25,6 +25,14 @@ jobs:
       - name: Install Dependencies
         run: yarn
 
+      - name: Creating .npmrc
+        run: |
+          cat << EOF > "./.npmrc"
+           //registry.npmjs.org/:_authToken=$NPM_REGISTRY_TOKEN
+          EOF
+        env:
+          NPM_REGISTRY_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Create Release Pull Request or Publish to npm
         # https://github.com/changesets/action
         uses: changesets/action@v1
