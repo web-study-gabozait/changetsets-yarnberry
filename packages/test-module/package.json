@@ -1,5 +1,5 @@
 {
-  "name": "test-module",
+  "name": "ldh3907-test-module",
   "packageManager": "yarn@3.5.0",
   "main": "./dist/index.js",
   "version": "0.0.2",

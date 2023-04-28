@@ -16,11 +16,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."\
       },\
       {\
-        "name": "test-module",\
+        "name": "ldh3907-test-module",\
         "reference": "workspace:packages/test-module"\
       },\
       {\
-        "name": "test-module2",\
+        "name": "ldh3907-test-module2",\
         "reference": "workspace:packages/test-module2"\
       }\
     ],\
@@ -28,8 +28,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["changetsets-yarnberry", ["workspace:."]],\
-      ["test-module", ["workspace:packages/test-module"]],\
-      ["test-module2", ["workspace:packages/test-module2"]]\
+      ["ldh3907-test-module", ["workspace:packages/test-module"]],\
+      ["ldh3907-test-module2", ["workspace:packages/test-module2"]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -1868,6 +1868,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["ldh3907-test-module", [\
+        ["workspace:packages/test-module", {\
+          "packageLocation": "./packages/test-module/",\
+          "packageDependencies": [\
+            ["ldh3907-test-module", "workspace:packages/test-module"],\
+            ["esbuild", "npm:0.17.18"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["ldh3907-test-module2", [\
+        ["workspace:packages/test-module2", {\
+          "packageLocation": "./packages/test-module2/",\
+          "packageDependencies": [\
+            ["ldh3907-test-module2", "workspace:packages/test-module2"],\
+            ["esbuild", "npm:0.17.18"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["lines-and-columns", [\
         ["npm:1.2.4", {\
           "packageLocation": "./.yarn/cache/lines-and-columns-npm-1.2.4-d6c7cc5799-0c37f9f7fa.zip/node_modules/lines-and-columns/",\
@@ -2669,26 +2689,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["term-size", "npm:2.2.1"]\
           ],\
           "linkType": "HARD"\
-        }]\
-      ]],\
-      ["test-module", [\
-        ["workspace:packages/test-module", {\
-          "packageLocation": "./packages/test-module/",\
-          "packageDependencies": [\
-            ["test-module", "workspace:packages/test-module"],\
-            ["esbuild", "npm:0.17.18"]\
-          ],\
-          "linkType": "SOFT"\
-        }]\
-      ]],\
-      ["test-module2", [\
-        ["workspace:packages/test-module2", {\
-          "packageLocation": "./packages/test-module2/",\
-          "packageDependencies": [\
-            ["test-module2", "workspace:packages/test-module2"],\
-            ["esbuild", "npm:0.17.18"]\
-          ],\
-          "linkType": "SOFT"\
         }]\
       ]],\
       ["tmp", [\
