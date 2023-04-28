@@ -1,5 +1,11 @@
 # test-module2
 
+## 0.0.6
+
+### Patch Changes
+
+- 2889a79: changeset test
+
 ## 0.0.5
 
 ### Patch Changes
